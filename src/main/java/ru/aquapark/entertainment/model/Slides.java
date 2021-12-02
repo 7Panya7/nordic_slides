@@ -17,5 +17,5 @@ public class Slides {
     Integer width;
     Boolean openOrClosedSlide;
     Double speed;
-
 }
+

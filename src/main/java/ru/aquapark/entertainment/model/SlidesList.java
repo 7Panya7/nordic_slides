@@ -16,26 +16,24 @@ import java.util.List;
 public class SlidesList {
     List<Slides> slidesList;
 
-
     public void add(Slides slides) {
         slidesList.add(slides);
     }
 
-//    public Slides choose(Slides slides) {
-//        if (Human.getAge() < 16) {
-//            for (Slides slides1 : slidesList) {
-//                if (slides.getSpeed() < 16) {
-//                    return slides;
-//                }
-//            }
-//            if (Human.getWeight() > 105) {
-//                for (Slides slides1 : slidesList) {
-//                    if (slides.getWidth() > 1) {
-//                        return slides;
-//                    }
-//                }
-//            }
-//        }
-//        return null;
-//    }
+    public void choose(Slides slides, Human human) {
+        if (human.getAge() < 16) {
+            for (Slides ignored : slidesList) {
+                if (slides.getSpeed() < 16) {
+                    return;
+                }
+            }
+        }
+        if (human.getWeight() > 105) {
+            for (Slides ignored : slidesList) {
+                if (slides.getWidth() > 1) {
+                    return;
+                }
+            }
+        }
+    }
 }
