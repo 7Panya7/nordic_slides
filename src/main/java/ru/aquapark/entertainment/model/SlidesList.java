@@ -20,20 +20,33 @@ public class SlidesList {
         slidesList.add(slides);
     }
 
-    public void choose(Slides slides, Human human) {
-        if (human.getAge() < 16) {
-            for (Slides ignored : slidesList) {
-                if (slides.getSpeed() < 16) {
-                    return;
-                }
+//    public static Slides choose(Slides slides, Human human) {
+//        if (human.getAge() < 16) {
+//            for (Slides ignored : slidesList) {
+//                if (slides.getSpeed() < 16) {
+//                    return slides;
+//                }
+//            }
+//        }
+//        if (human.getWeight() > 105) {
+//            for (Slides ignored : slidesList) {
+//                if (slides.getWidth() > 1) {
+//                    return slides;
+//                }
+//            }
+//        }
+//        return slides;
+//    }
+
+    public Slides get (Slides slides) {
+        for (Slides slides1: slidesList) {
+            if (slides.getColour().equals(slides1.getColour())
+            && slides.getHeight().equals(slides1.getHeight())
+            && slides.getWidth().equals(slides1.getWidth())) {
+                return slides1;
             }
+
         }
-        if (human.getWeight() > 105) {
-            for (Slides ignored : slidesList) {
-                if (slides.getWidth() > 1) {
-                    return;
-                }
-            }
-        }
+        return null;
     }
 }
