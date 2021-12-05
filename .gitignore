@@ -1,23 +1,85 @@
-# Compiled class file
-*.class
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
+##############################
+## Java
+##############################
 .mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+*.класс
+*.банка
+*.война
+*.ухо
+*.нар
 hs_err_pid*
+
+##############################
+## Maven
+##############################
+цель/
+pom.xml.тег
+pom.xml.Резервная копия выпуска
+pom.xml.Резервное копирование версий
+pom.xml.далее
+pom.xml.bak
+выпуск.свойства
+dependency-reduced-pom.xml
+Номер здания.свойства
+.mvn/время.свойства
+.mvn/wrapper/maven-wrapper.jar
+
+##############################
+## Gradle
+##############################
+bin/
+строить/
+.грэдли
+.gradletasknamecache
+gradle-приложение.настройка
+!gradle-wrapper.jar
+
+##############################
+## IntelliJ
+##############################
+из/
+.идея/
+.idea_modules/
+*.iml
+*.пис
+*.iws
+
+##############################
+## Затмение
+##############################
+.настройки/
+bin/
+tmp/
+.метаданные
+.путь к классу
+.проект
+*.tmp
+*.bak
+*.swp
+*~.наконечник
+местные.свойства
+.путь загрузки
+.путь к фабрике
+
+##############################
+## NetBeans
+##############################
+nbproject/частный/
+строить/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+##############################
+## Код Visual Studio
+##############################
+.vscode/
+.код-рабочее пространство
+
+##############################
+## OS X
+##############################
+.DS_Store
