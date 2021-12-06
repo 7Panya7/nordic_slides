@@ -9,8 +9,7 @@ public class Entertainment {
         StartHumanConfig.start();
 
 
-
-//        Slides choose = SlidesList.choose(Slides., human);
+//       Slides choose = SlidesList.choose(Slides., human);
 //
 //        System.out.println(choose);
 

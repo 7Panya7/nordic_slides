@@ -13,11 +13,20 @@ import java.util.List;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Builder
 
-public class SlidesList {
+public class SlidesList implements SlidesListInterface {
+
     List<Slides> slidesList;
 
     public void add(Slides slides) {
         slidesList.add(slides);
+    }
+
+    public void add(Integer index,Slides slides) {
+        slidesList.add(index,slides);
+    }
+
+    public void remove(Slides slides) {
+        slidesList.remove(slides);
     }
 
 //    public static Slides choose(Slides slides, Human human) {
