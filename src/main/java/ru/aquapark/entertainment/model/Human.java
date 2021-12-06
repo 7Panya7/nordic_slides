@@ -13,7 +13,7 @@ import java.util.Scanner;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Builder
 
-public class Human implements toRollDown {
+public class Human {
     String name, lastName, middleName;
     Integer age, height, weight;
     Character sex;
@@ -54,7 +54,4 @@ public class Human implements toRollDown {
         return input.next().charAt(0);
     }
 
-    public void rolling() {
-        toRollDown.toRoll();
-    }
 }

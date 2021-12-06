@@ -14,9 +14,21 @@ import java.util.List;
 @Builder
 
 public class HumanList {
-    List<Human>humanList;
+    List<Human> humanList;
 
-    public void add (Human human) {
+    public void add(Human human) {
         humanList.add(human);
+    }
+
+    public Human get(Human human) {
+        for (Human human1 : humanList) {
+            if (human.getName().equals(human1.getName())
+                    && human.getAge().equals(human1.getAge())
+                    && human.getSex().equals(human1.getSex())) {
+                return human1;
+            }
+
+        }
+        return null;
     }
 }
